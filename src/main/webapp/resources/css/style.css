@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+a:hover {
+	text-decoration: none;
+}
+
+.circle_avata{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: #a74745;
+	text-align:center;
+	padding: 5px !important;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+
+.circle_so{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #a74745;
+	text-align:center;
+	padding-bottom: 1px !important;
+	font-size:10px; position: absolute;top: 10px !important;right: 0px!important;
+}
