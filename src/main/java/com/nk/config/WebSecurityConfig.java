@@ -21,9 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	 
 	 @Autowired
 	 public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-	 
-	    
-	       // Các User trong Database
+
 	       auth.userDetailsService(myDBAauthenticationService);
 	       auth.authenticationProvider(authenticationProvider());
 	 
@@ -37,8 +35,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		.anyRequest().permitAll()
 		.and().formLogin().loginPage("/login").loginProcessingUrl("/login_process").usernameParameter("TenDangNhap").passwordParameter("MatKhau").failureUrl("/login_process").defaultSuccessUrl("/login_process")
 		.and().exceptionHandling().accessDeniedPage("/")
-		.and().logout().logoutUrl("/logout").logoutSuccessUrl("/");
-		System.out.println();
+		.and().logout().logoutUrl("/logout").logoutSuccessUrl("/logout_process");
 	}
 	
 	@Override
@@ -55,6 +52,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         //authenticationProvider.setPasswordEncoder(passwordEncoder());
         return authenticationProvider;
     }
+    
+    
     
  
 	

@@ -38,7 +38,6 @@ public class MyDBAuthenticationService implements UserDetailsService {
         boolean accountNonExpired = true;
         boolean credentialsNonExpired = true;
         boolean accountNonLocked = true;
- 
         UserDetails userDetails = (UserDetails) new User(account.getTenDangNhap(), //
                 account.getMatKhau(), enabled, accountNonExpired, //
                 credentialsNonExpired, accountNonLocked, grantList);

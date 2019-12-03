@@ -15,9 +15,6 @@ import javax.persistence.Table;
 @Entity(name="taikhoan")
 public class TaiKhoan implements Serializable{
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 7788573051403565353L;
 
 	@Id

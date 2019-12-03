@@ -85,8 +85,4 @@ public class ApplicationContextConfig {
 		hibernateTransactionManager.afterPropertiesSet();
 		return hibernateTransactionManager;
 	}
-	
-	
-	
-	
 }

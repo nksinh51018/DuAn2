@@ -11,11 +11,11 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 @ControllerAdvice
 public class ErrorController{
 
-//	@ResponseStatus(value = HttpStatus.NOT_FOUND)
-//	@ExceptionHandler(Exception.class)
-//	public String error() {
-//		System.out.println("Dsad");
-//		return "error";
-//	}
-//	
+	@ResponseStatus(value = HttpStatus.NOT_FOUND)
+	@ExceptionHandler(Exception.class)
+	public String error() {
+		System.out.println("Dsad");
+		return "error";
+	}
+	
 }
